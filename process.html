@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Proj1 - Anatomy</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css">
+	<!-- as soon as body loads -->
+	<script>
+		function getRandomGroup() {
+			userDisplay = document.getElementById("userGroup");
+			var value = getRandomInt(1, 11);
+			userDisplay.innerHTML = value;
+		}
+	</script>
+</head>
+
+<body>
+	<div id="page">
+		<div id="header">
+			<div>
+				<a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+				<ul id="navigation">
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="about.html">About</a>
+					</li>
+					<li class="menu">
+						<a href="singlepost.html">Intro</a>
+					</li>
+					<li class="menu">
+						<a href="task.html">Project</a>
+						<ul class="primary">
+							<li>
+								<a href="task.html">Task</a>
+								<a href="process.html">Process</a>
+								<a href="evaluation.html">Evaluation</a>
+								<a href="conclusion.html">Conclusion</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="body">
+			<div class="header">
+				<button id="userGroupBttn" onclick="getRandomGroup();">Generate Number</button>
+				<span id="userGroup"></span>
+				<div>
+					<h1>Process</h1>
+					<img src="images/sys66.jpg" alt="">
+					<h2>STEPS</h2>
+					<p>So, let's get ourselves started!
+						Your groups will be determined by a random selection from the generator at the top of this page.
+						Since there are 11 main organ systems to be featured, you will only be generating numbers from 1
+						to 11. This number will then determines your group number.
+					</p>
+					<p>Once you picked your organ system, you're ready to start with the diagram!
+						<br>
+						Step 1: Draw a clear diagram of the organ system that was picked and outline it inside the human
+						body. Make sure to draw carefully and use plenty of colors for a better evaluation later on!
+					</p>
+
+					<p>
+						Step 2:  Next, write a one-page summary of your organ system, which will include :
+						<br>
+						A description of each organ and its function.
+						How the organs work together to function as a system.
+						How the organ system functions to serve the human body.
+						Any other interesting facts about your organ system.
+
+					<img src="images/yougotthis.jpg" alt="">
+					<br>
+					Step 3: Present your organ system to the class! Here's are some tips:
+					
+
+					Stand tall with your backside parallel
+					Project your voice so everyone can hear you clearly
+					Make sure everybody in the group gets to talk
+					Do not stutter or pause in the middle of a sentence
+				</p>	
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="footnote">
+				<div>
+					<p>&copy; 2020 BY MEHDI | ORGANVITAL | ALL RIGHTS RESERVED</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
